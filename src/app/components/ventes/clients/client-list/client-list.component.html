@@ -1,0 +1,43 @@
+<!-- Breadcrumbs-->
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="#">Dashboard</a>
+  </li>
+  <li class="breadcrumb-item active">My Dashboard</li>
+</ol>
+<!-- Area Chart Example-->
+<div class="card mb-3">
+  <div class="card-header">
+    <i class="fa fa-area-chart"></i> Clients</div>
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <tr>
+        <th>Id</th>
+        <th>Nom</th>
+        <th>Prenom</th>
+        <th>Statut</th>
+        <th>Photo</th>
+        <th>Tel</th>
+        <th>Email</th>
+        <th>Adresse</th>
+        <th>Ville</th>
+        <th>Actions</th>
+      </tr>
+      <tr *ngFor="let client of clients">
+        <td>{{ client.id }}</td>
+        <td>{{ client.nom }}</td>
+        <td>{{ client.prenom }}</td>
+        <td>{{ client.statut }}</td>
+        <td>{{ client.photo }}</td>
+        <td>{{ client.tel }}</td>
+        <td>{{ client.email }}</td>
+        <td>{{ client.adresse }}</td>
+        <td>{{ client.ville }}</td>
+        <td>
+          <button (click)="edit(client)" type="button" class="btn btn-success">Editer</button>
+          <button (click)="delete(client)" type="button" class="btn btn-danger ml-2">Supprimer</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

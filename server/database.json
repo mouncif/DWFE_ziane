@@ -1,0 +1,28 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "nom": "Rockabye",
+      "prenom": "prenom",
+      "statut": "sttut",
+      "photo": "url ",
+      "tel": "tel",
+      "email": "email",
+      "adresse": "",
+      "ville": "ville"
+    }
+  ],
+  "fournisseurs": [
+    {
+      "id": 1,
+      "nom": "test",
+      "nomCourt": "nom court",
+      "ville": "hh",
+      "adresse": "hhhhhhhhh",
+      "telFix": "hgh",
+      "telMobile": "tel",
+      "telFax": "hg",
+      "email": "mouad.ziani1997@gmail.com"
+    }
+  ]
+}
