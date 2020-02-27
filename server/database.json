@@ -5,7 +5,7 @@
       "nom": "Rockabye",
       "prenom": "prenom",
       "statut": "sttut",
-      "photo": "url ",
+      "photo": "https://via.placeholder.com/150",
       "tel": "tel",
       "email": "email",
       "adresse": "",
@@ -23,6 +23,20 @@
       "telMobile": "tel",
       "telFax": "hg",
       "email": "mouad.ziani1997@gmail.com"
+    }
+  ],
+  "produits": [
+    {
+      "id": 1,
+      "nom": "Produi 1",
+      "nomCourt": "Nom court",
+      "prixBase": "20",
+      "prixVente": "30",
+      "maxRemise": "144",
+      "unite": "DH",
+      "image": "https://via.placeholder.com/150",
+      "qteInitial": "2",
+      "qteActuel": "34"
     }
   ]
 }

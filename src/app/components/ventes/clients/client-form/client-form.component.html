@@ -9,7 +9,6 @@
 <div class="card mb-3">
   <div class="card-header">
     <i class="fa fa-area-chart"></i> Clients
-    <button class="btn btn-primary" routerLink="clients/add">Ajouter</button>
   </div>
   <div class="card-body">
     <form [formGroup]="clientService.form" (submit)="save()">

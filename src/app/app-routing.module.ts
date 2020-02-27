@@ -4,6 +4,8 @@ import {ClientListComponent} from './components/ventes/clients/client-list/clien
 import {ClientFormComponent} from './components/ventes/clients/client-form/client-form.component';
 import {FornisseurListComponent} from './components/ventes/fournisseurs/fornisseur-list/fornisseur-list.component';
 import {FornisseurFormComponent} from './components/ventes/fournisseurs/fornisseur-form/fornisseur-form.component';
+import {ProduitListComponent} from './components/ventes/produits/produit-list/produit-list.component';
+import {ProduitFormComponent} from './components/ventes/produits/produit-form/produit-form.component';
 
 
 const routes: Routes = [
@@ -13,6 +15,9 @@ const routes: Routes = [
   { path: 'fournisseurs', component: FornisseurListComponent},
   { path: 'fournisseurs/add', component: FornisseurFormComponent},
   { path: 'fournisseurs/edit', component: FornisseurFormComponent},
+  { path: 'produits', component: ProduitListComponent},
+  { path: 'produits/add', component: ProduitFormComponent},
+  { path: 'produits/edit', component: ProduitFormComponent},
 ];
 
 @NgModule({
