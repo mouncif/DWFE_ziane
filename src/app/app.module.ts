@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {ReactiveFormsModule} from '@angular/forms';
 import { UserListComponent } from './components/admin/users/user-list/user-list.component';
 import { UserFormComponent } from './components/admin/users/user-form/user-form.component';
+import { Page404Component } from './components/shared/page404/page404.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { UserFormComponent } from './components/admin/users/user-form/user-form.
     ClientFormComponent,
     ClientListComponent,
     UserListComponent,
-    UserFormComponent
+    UserFormComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,
