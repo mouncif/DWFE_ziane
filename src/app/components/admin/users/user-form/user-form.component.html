@@ -1,1 +1,75 @@
-<p>user-form works!</p>
+<!-- Breadcrumbs-->
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a routerLink="/">users</a>
+  </li>
+  <li class="breadcrumb-item active">Nouveau client</li>
+</ol>
+<div class="page-title">
+  <h3>Dossier Client</h3>
+</div>
+<div class="navigation-tabs">
+  <ul class="nav nav-tabs">
+    <li routerLink="/users" role="presentation" [routerLinkActive]="['active']">
+      <a href="#" aria-controls="home" role="tab" data-toggle="tab">Liste des utlisateurs</a>
+    </li>
+    <li routerLink="/users/add" role="presentation" [routerLinkActive]="['is-active']">
+      <a routerLink="/users/add"  href="#" aria-controls="profile" role="tab" data-toggle="tab">Nouveau Utilisateur</a>
+    </li>
+  </ul>
+</div>
+<!-- Area Chart Example-->
+<div class="card mb-3">
+  <div class="card-header">
+    <i class="fa fa-area-chart"></i> users
+  </div>
+  <div class="card-body">
+    <form [formGroup]="userService.form" (submit)="save()">
+      <div class="row">
+        <div class="col-md-3">
+          <label>Photo</label>
+          <img src="assets/image-placeholder.gif"class="img-thumbnail mb-2">
+          <input type="text" formControlName="photo" name="photo" class="form-control" placeholder="Photo URL">
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Nom</label>
+                <input type="text" formControlName="nom" name="nom" class="form-control" placeholder="Nom">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Statut</label>
+                <input type="text" formControlName="statut" name="statut" class="form-control" placeholder="Statut">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" formControlName="email" name="email" class="form-control" placeholder="Email">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Role</label>
+            <select formControlName="profile" name="profile" class="form-control">
+              <option value="Editor">Editor</option>
+              <option value="User">Admin</option>
+              <option value="User">User</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Date création</label>
+            <input type="date" formControlName="dateCreation" name="dateCreation" class="form-control" placeholder="Date création">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+

@@ -1,5 +1,6 @@
 export interface User {
   id?: number;
+  nom?: string;
   profile?: string;
   statut?: string;
   photo?: string;

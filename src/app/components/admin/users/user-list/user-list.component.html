@@ -1,1 +1,56 @@
-<p>user-list works!</p>
+<!-- Breadcrumbs-->
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a routerLink="/users">utilisateurs</a>
+  </li>
+  <li class="breadcrumb-item active">Liste des utilisateurs</li>
+</ol>
+<div class="page-title">
+  <h3>Dossier user</h3>
+</div>
+<div class="navigation-tabs">
+  <ul class="nav nav-tabs">
+    <li routerLink="/" role="presentation" [routerLinkActive]="['active']">
+      <a href="#" aria-controls="home" role="tab" data-toggle="tab">Liste des users</a>
+    </li>
+    <li routerLink="/users/add" role="presentation" [routerLinkActive]="['active']">
+      <a routerLink="/users/add"  href="#" aria-controls="profile" role="tab" data-toggle="tab">Nouveau user</a>
+    </li>
+  </ul>
+</div>
+<!-- Area Chart Example-->
+<div class="card mb-3">
+  <div class="card-header">
+    <i class="fa fa-area-chart"></i> users
+  </div>
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <tr>
+        <th>Photo</th>
+        <th>Nom</th>
+        <th>Profile</th>
+        <th>Statut</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+      <tr *ngFor="let user of users">
+        <td>
+          <img [src]="user.photo" alt="" class="img-thumbnail">
+        </td>
+        <td>{{ user.nom }}</td>
+        <td>{{ user.profile }}</td>
+        <td>{{ user.statut }}</td>
+        <td>{{ user.email }}</td>
+        <td>
+          <button (click)="edit(user)" type="button" class="btn btn-success">
+            <i class="fa fa-pencil"></i>
+          </button>
+          <button (click)="delete(user)" type="button" class="btn btn-danger ml-2">
+            <i class="fa fa-trash"></i>
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+

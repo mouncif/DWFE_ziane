@@ -10,6 +10,17 @@
       "email": "email",
       "adresse": "adresse",
       "ville": "ville"
+    },
+    {
+      "id": 2,
+      "nom": "Rockabye",
+      "prenom": "",
+      "statut": "sttut ttttt",
+      "photo": "https://via.placeholder.com/150",
+      "tel": "",
+      "email": "mouad.ziani1997@gmail.com",
+      "adresse": "",
+      "ville": ""
     }
   ],
   "fournisseurs": [
@@ -28,7 +39,7 @@
   "produits": [
     {
       "id": 1,
-      "nom": "Produi 1",
+      "nom": "Produi 2",
       "nomCourt": "Nom court",
       "prixBase": "20",
       "prixVente": "30",
@@ -37,6 +48,18 @@
       "image": "https://via.placeholder.com/150",
       "qteInitial": "2",
       "qteActuel": "34"
+    },
+    {
+      "id": 2,
+      "nom": "Prod 2",
+      "nomCourt": "Nom court",
+      "prixBase": "144",
+      "prixVente": "155",
+      "maxRemise": "5",
+      "unite": "50",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+      "qteInitial": "20",
+      "qteActuel": "10"
     }
   ]
 }

@@ -7,6 +7,8 @@ import {FornisseurFormComponent} from './components/ventes/fournisseurs/fornisse
 import {ProduitListComponent} from './components/ventes/produits/produit-list/produit-list.component';
 import {ProduitFormComponent} from './components/ventes/produits/produit-form/produit-form.component';
 import {Page404Component} from './components/shared/page404/page404.component';
+import {UserFormComponent} from './components/admin/users/user-form/user-form.component';
+import {UserListComponent} from './components/admin/users/user-list/user-list.component';
 
 
 const routes: Routes = [
@@ -19,6 +21,9 @@ const routes: Routes = [
   { path: 'produits', component: ProduitListComponent},
   { path: 'produits/add', component: ProduitFormComponent},
   { path: 'produits/edit', component: ProduitFormComponent},
+  { path: 'users', component: UserListComponent},
+  { path: 'users/add', component: UserFormComponent},
+  { path: 'users/edit', component: UserFormComponent},
   { path: '404', component: Page404Component},
 ];
 
