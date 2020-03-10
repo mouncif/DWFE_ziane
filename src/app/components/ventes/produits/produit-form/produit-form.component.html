@@ -1,10 +1,23 @@
 <!-- Breadcrumbs-->
 <ol class="breadcrumb">
   <li class="breadcrumb-item">
-    <a href="#">Dashboard</a>
+    <a routerLink="/produits">Produits</a>
   </li>
-  <li class="breadcrumb-item active">My Dashboard</li>
+  <li class="breadcrumb-item active">Nouveau produits</li>
 </ol>
+<div class="page-title">
+  <h3>Gestion du stock</h3>
+</div>
+<div class="navigation-tabs">
+  <ul class="nav nav-tabs">
+    <li routerLink="/produits" role="presentation" [routerLinkActive]="['is-active']">
+      <a href="#" aria-controls="home" role="tab" data-toggle="tab">Liste des produits</a>
+    </li>
+    <li routerLink="/produits/add" role="presentation" [routerLinkActive]="['is-active']">
+      <a href="#" aria-controls="profile" role="tab" data-toggle="tab">Nouveau Produit</a>
+    </li>
+  </ul>
+</div>
 <!-- Area Chart Example-->
 <div class="card mb-3">
   <div class="card-header">

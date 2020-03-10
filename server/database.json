@@ -8,21 +8,21 @@
       "photo": "https://via.placeholder.com/150",
       "tel": "tel",
       "email": "email",
-      "adresse": "",
+      "adresse": "adresse",
       "ville": "ville"
     }
   ],
   "fournisseurs": [
     {
       "id": 1,
-      "nom": "test",
-      "nomCourt": "nom courtcc",
-      "ville": "hh",
-      "adresse": "hhhhhhhhh",
-      "telFix": "hgh",
-      "telMobile": "tel",
-      "telFax": "hg",
-      "email": "mouad.ziani1997@gmail.com"
+      "nom": "Mouad",
+      "nomCourt": "ZIANI",
+      "ville": "Marrakech",
+      "adresse": "Adresse adresse ",
+      "telFix": "0523232323232",
+      "telMobile": "0123456789",
+      "telFax": "0545454545454",
+      "email": "mouad@mail.com"
     }
   ],
   "produits": [

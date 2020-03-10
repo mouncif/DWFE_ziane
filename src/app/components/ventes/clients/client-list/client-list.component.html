@@ -1,24 +1,35 @@
 <!-- Breadcrumbs-->
 <ol class="breadcrumb">
   <li class="breadcrumb-item">
-    <a href="#">Dashboard</a>
+    <a routerLink="/clients">Clients</a>
   </li>
-  <li class="breadcrumb-item active">My Dashboard</li>
+  <li class="breadcrumb-item active">Liste des clients</li>
 </ol>
+<div class="page-title">
+  <h3>Dossier Client</h3>
+</div>
+<div class="navigation-tabs">
+  <ul class="nav nav-tabs">
+    <li routerLink="/" role="presentation" [routerLinkActive]="['is-active']">
+      <a href="#" aria-controls="home" role="tab" data-toggle="tab">Liste des clients</a>
+    </li>
+    <li routerLink="/clients/add" role="presentation" [routerLinkActive]="['is-active']">
+      <a routerLink="/clients/add"  href="#" aria-controls="profile" role="tab" data-toggle="tab">Nouveau Client</a>
+    </li>
+  </ul>
+</div>
 <!-- Area Chart Example-->
 <div class="card mb-3">
   <div class="card-header">
     <i class="fa fa-area-chart"></i> Clients
-    <button class="btn btn-primary float-right" routerLink="clients/add">Ajouter</button>
   </div>
   <div class="card-body">
     <table class="table table-bordered table-striped">
       <tr>
-        <th>Id</th>
+        <th>Photo</th>
         <th>Nom</th>
         <th>Prenom</th>
         <th>Statut</th>
-        <th>Photo</th>
         <th>Tel</th>
         <th>Email</th>
         <th>Adresse</th>
@@ -29,7 +40,6 @@
         <td>
           <img [src]="client.photo" alt="" class="img-thumbnail">
         </td>
-        <td>{{ client.id }}</td>
         <td>{{ client.nom }}</td>
         <td>{{ client.prenom }}</td>
         <td>{{ client.statut }}</td>
@@ -38,8 +48,12 @@
         <td>{{ client.adresse }}</td>
         <td>{{ client.ville }}</td>
         <td>
-          <button (click)="edit(client)" type="button" class="btn btn-success">Editer</button>
-          <button (click)="delete(client)" type="button" class="btn btn-danger ml-2">Supprimer</button>
+          <button (click)="edit(client)" type="button" class="btn btn-success">
+            <i class="fa fa-pencil"></i>
+          </button>
+          <button (click)="delete(client)" type="button" class="btn btn-danger ml-2">
+            <i class="fa fa-trash"></i>
+          </button>
         </td>
       </tr>
     </table>

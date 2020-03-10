@@ -10,10 +10,10 @@ export class AdminGuard implements CanActivate {
   ) {}
 
   canActivate(): boolean {
-    if (!this.auth.authRole() === 'admin') {
+    /*if (!this.auth.authRole() === 'admin') {
       this.router.navigate(['/404']);
       return false;
-    }
+    }*/
     return true;
   }
 }
