@@ -49,7 +49,7 @@ To get the project up and running on your local machine, do the following. I ass
 ## Demo
 
 You can try a demo of smartVents on stackblitz. by clicking on this link below:
-- [https://stackblitz.com/github/mouncif/DWFE_ziane](#https://stackblitz.com/github/mouncif/DWFE_ziane) 
+- [Demo on stackblitz](#https://stackblitz.com/github/mouncif/DWFE_ziane) 
 
 ## Screens
 
