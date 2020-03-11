@@ -10,6 +10,8 @@ import {Router} from '@angular/router';
 })
 export class ProduitFormComponent implements OnInit {
 
+  imageUrl = 'assets/product.png';
+
   constructor(
     private produitService: ProduitService,
     private router: Router
@@ -33,7 +35,6 @@ export class ProduitFormComponent implements OnInit {
   }
 
   save() {
-    console.log('test');
     if (this.produitService.form.valid) {
       if (!this.produitService.form.get('id').value) {
         this.addproduit(this.produitService.form.value);

@@ -1,27 +1,67 @@
-# SmartVentes
+# Smart Vents - Developpement web Frontend Exam
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.25.
+This repository is my own implementation of exam (developpement web frontend) 
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- [Features](#features-use-cases)
+- [Installation](#installation--testing)
+- [Used technologies](#used-technologies)
+- [Demo](#Demo)
+- [Screens](#Screens)
+- [Author](#author)
+---
 
-## Code scaffolding
+## Features (use cases)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Sells & stock management Area
+| Done ? | User Role   |  Action                                                              |
+|----|----------------|---------------------------------------------------------------------- |
+| :heavy_check_mark:  | User & Editor   | 1- Be able to manage products (add, update, delete)  |
+| :heavy_check_mark:  | User & Editor   | 2- Be able to manage suppliers (add, update, delete) |
+| :heavy_check_mark:  | User & Editor   | 3- Be able to manage customers (add, update, delete) |
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+#### Administratioon area
+| Done ? | User Role   |  Action        |
+|----|---------------|----------------|
+| :heavy_check_mark: | Administrator   | 1- Be able to manage users (add, update, delete) |
+| :heavy_check_mark: | Administrator   | 2- Be able to attach role and permissions to users |
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Installation & testing
 
-## Running end-to-end tests
+To get the project up and running on your local machine, do the following. I assume you already know how to go about **Angular**, npm, so i'll be brief
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- clone it => `git clone https://github.com/mouncif/DWFE_ziane.git` or download it
+- Run npm install, to install dependencies npm dependencies
+- Run this command `ng serve` in your cmd for start the server 
 
-## Further help
+## Used technologies
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- **Angular** Frontend Framework.
+- **webpack** for compiling and optimizing assets (already integrated in angular).
+- **Json-Server** for manage data locally.
+- **Bootstrap 4** for styling.
+- **Git** for version control.
+
+## Demo
+
+You can try a demo of smartVents on stackblitz. by clicking on this link below:
+- [https://stackblitz.com/github/mouncif/DWFE_ziane](#https://stackblitz.com/github/mouncif/DWFE_ziane) 
+
+## Screens
+
+Coming soon....
+
+## Author
+
+| <a href="http://mouadziani.github.io" target="_blank">**Mouad ZIANI**</a>  |
+| :---: |
+| <img width="150" height="150" src="https://github.com/mouadziani.png?v=3&s=150">|
+| <strong>Software Engineering Student </strong> |
+
+---
+
+## License
