@@ -7,6 +7,7 @@ This repository is my own implementation of exam (developpement web frontend)
 - [Features](#features-use-cases)
 - [Installation](#installation--testing)
 - [Used technologies](#used-technologies)
+- [Project Structure](#project-structure)
 - [Demo](#Demo)
 - [Screens](#Screens)
 - [Author](#author)
@@ -45,6 +46,51 @@ To get the project up and running on your local machine, do the following. I ass
 - **Json-Server** for manage data locally.
 - **Bootstrap 4** for styling.
 - **Git** for version control.
+
+## Project Structure
+    
+    ├───e2e
+    ├───server
+    │   └───database.json
+    └───src
+        ├───app
+        │   ├───components
+        │   │   ├───admin
+        │   │   │   └───users
+        │   │   │       ├───user-form
+        │   │   │       └───user-list
+        │   │   ├───guards
+        │   │   │   ├───admin.guard.ts
+        │   │   │   ├───editor.guard.ts
+        │   │   │   └───user.guard.ts
+        │   │   ├───layouts
+        │   │   │   └───main
+        │   │   ├───partails
+        │   │   │   └───navbar
+        │   │   ├───shared
+        │   │   │   └───page404
+        │   │   └───ventes
+        │   │       ├───clients
+        │   │       │   ├───client-form
+        │   │       │   └───client-list
+        │   │       ├───fournisseurs
+        │   │       │   ├───fornisseur-form
+        │   │       │   └───fornisseur-list
+        │   │       └───produits
+        │   │           ├───produit-form
+        │   │           └───produit-list
+        │   ├───models
+        │   │   ├───produit.ts
+        │   │   ├───user.ts
+        │   │   ├───fournisseur.ts
+        │   │   └───client.ts
+        │   └───services
+        │       ├───user.service.ts
+        │       ├───client.service.ts
+        │       ├───fournisseur.service.ts
+        │       └───produit.service.ts
+        ├───assets
+        └───environments
 
 ## Demo
 
